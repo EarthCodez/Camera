@@ -1,11 +1,13 @@
 let cam;
 var camof;
 var ftr;
+var svbtn;
 function setup() {
   createCanvas(640,480);
   cam=createCapture(VIDEO);
   camof=createSlider(0,50);
   ftr=createSlider(0,800);
+  svbtn=createButton("save");
 }
 
 function draw() {
@@ -44,4 +46,9 @@ function draw() {
     else if(ftr.value()<800&&ftr.value()>700){
     filter(ERODE);
   }
+  svbtn.mousePressed(save);
           }
+  funcrion save(){
+   save(); 
+    
+  }
