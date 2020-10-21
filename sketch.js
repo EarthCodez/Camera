@@ -1,3 +1,4 @@
+  
 let cam;
 var camof;
 var ftr;
@@ -48,7 +49,7 @@ function draw() {
   }
   svbtn.mousePressed(save);
           }
-  funcrion save(){
+  function save(){
    save(); 
     
   }
