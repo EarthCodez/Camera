@@ -1,4 +1,3 @@
-  
 let cam;
 var camof;
 var ftr;
@@ -6,7 +5,7 @@ var svbtn;
 function setup() {
   createCanvas(640,480);
   cam=createCapture(VIDEO);
-  camof=createSlider(0,50);
+  camof=0;
   ftr=createSlider(0,800);
   svbtn=createButton("save");
 }
@@ -15,8 +14,7 @@ function draw() {
   background(220);
   fill(random(0,255),random(0,255),random(0,255));
   cam.position(0,0);
-  camof.position(0,0);
-  if(camof.value()<25){
+  if(camof<25){
   cam.hide();
   }
   else{
@@ -49,7 +47,3 @@ function draw() {
   }
   svbtn.mousePressed(save);
           }
-  function save(){
-   save(); 
-    
-  }
