@@ -81,6 +81,5 @@ function draw() {
             hs1.show();
             hs2.show();
             hs3.show();
-            cosh=false;
             }
           }
